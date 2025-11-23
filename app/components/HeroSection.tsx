@@ -22,7 +22,7 @@ export default function HeroSection() {
             <div className="relative z-10 max-w-5xl mx-auto text-center">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight text-slate-900">
                     <TextType
-                        text="Soria. Le répétiteur virtuel de ton enfant."
+                        text="Soria"
                         as="span"
                         typingSpeed={50}
                         loop={false}
