@@ -14,7 +14,7 @@ export default function HeroSection() {
                 <Iridescence 
                     color={[0.2, 0.4, 0.9]}
                     speed={0.5}
-                    amplitude={0.05}
+                    amplitude={0.005}
                     mouseReact={true}
                 />
             </div>
