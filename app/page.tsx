@@ -1,14 +1,11 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import WhatIsSoriaSection from "./components/WhatIsSoriaSection";
-import HowItWorksSection from "./components/HowItWorksSection";
-import WhySoriaSection from "./components/WhySoriaSection";
-import ParentsSection from "./components/ParentsSection";
-import UseCasesSection from "./components/UseCasesSection";
 import FeaturesSection from "./components/FeaturesSection";
-import TestimonialsSection from "./components/TestimonialsSection";
+import SolutionSection from "./components/SolutionSection";
+import ScreenshotsSection from "./components/ScreenshotsSection";
 import DownloadSection from "./components/DownloadSection";
 import Footer from "./components/Footer";
+import FloatingActionButton from "./components/FloatingActionButton";
 
 export default function Home() {
   return (
@@ -16,16 +13,13 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <WhatIsSoriaSection />
-        <HowItWorksSection />
-        <WhySoriaSection />
-        <ParentsSection />
-        <UseCasesSection />
         <FeaturesSection />
-        <TestimonialsSection />
+        <SolutionSection />
+        <ScreenshotsSection />
         <DownloadSection />
       </main>
       <Footer />
+      <FloatingActionButton />
     </>
   );
 }
