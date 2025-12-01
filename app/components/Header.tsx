@@ -20,8 +20,8 @@ export default function Header() {
     { href: "#features", label: "Fonctionnalités" },
     { href: "#solution", label: "Pourquoi Soria" },
     { href: "#screenshots", label: "L'application" },
-    { href: "#testimonials", label: "Témoignages" },
-    { href: "#download", label: "Télécharger" },
+    { href: "#pricing", label: "Tarifs" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
