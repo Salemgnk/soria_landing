@@ -171,8 +171,8 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div className="text-white/80 text-xs sm:text-sm">
-                    <p>+33 1 23 45 67 89</p>
-                    <p>+33 6 12 34 56 78</p>
+                    <p>+229 01 00 00 00 00</p>
+                    <p>+228 00 00 00 00</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
@@ -194,7 +194,7 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div className="text-white/80 text-xs sm:text-sm">
-                    <p>Paris, France</p>
+                    <p>Cotonou, Bénin</p>
                   </div>
                 </li>
               </ul>
