@@ -2,20 +2,20 @@
 
 export default function SolutionSection() {
   return (
-    <section className="relative py-24 px-6 bg-white overflow-hidden">
+    <section id="solution" className="relative py-16 md:py-24 px-4 sm:px-6 bg-white overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-purple-300 to-pink-300 rounded-full opacity-20 blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full opacity-15 blur-3xl translate-x-1/3 translate-y-1/3"></div>
+      <div className="absolute top-0 left-0 w-[300px] sm:w-[400px] md:w-[600px] h-[300px] sm:h-[400px] md:h-[600px] bg-gradient-to-br from-purple-300 to-pink-300 rounded-full opacity-20 blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] sm:w-[600px] md:w-[800px] h-[400px] sm:h-[600px] md:h-[800px] bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full opacity-15 blur-3xl translate-x-1/3 translate-y-1/3"></div>
       
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center relative z-10">
         {/* Left side - Phone mockup */}
         <div className="relative order-2 lg:order-1">
-          <div className="relative max-w-sm mx-auto">
+          <div className="relative max-w-[280px] sm:max-w-sm mx-auto">
             {/* Phone frame */}
-            <div className="bg-gradient-to-br from-gray-200 via-gray-300 to-gray-200 rounded-[3rem] p-4 shadow-2xl">
-              <div className="bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="bg-gradient-to-br from-gray-200 via-gray-300 to-gray-200 rounded-[2.5rem] sm:rounded-[3rem] p-3 sm:p-4 shadow-2xl">
+              <div className="bg-white rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden">
                 {/* Screen content */}
-                <div className="bg-gradient-to-br from-purple-50 via-white to-pink-50 p-6 h-[600px] relative">
+                <div className="bg-gradient-to-br from-purple-50 via-white to-pink-50 p-4 sm:p-6 h-[500px] sm:h-[600px] relative">
                   {/* Status bar */}
                   <div className="flex justify-between items-center mb-6 text-xs text-gray-600">
                     <span>9:41</span>
@@ -61,25 +61,25 @@ export default function SolutionSection() {
             </div>
 
             {/* Decorative floating element */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-pink-300 to-purple-400 rounded-full opacity-20 blur-2xl animate-pulse"></div>
-            <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-tr from-purple-300 to-pink-400 rounded-full opacity-20 blur-2xl animate-pulse delay-75"></div>
+            <div className="hidden sm:block absolute -top-8 -right-8 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-pink-300 to-purple-400 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+            <div className="hidden sm:block absolute -bottom-8 -left-8 w-32 sm:w-40 h-32 sm:h-40 bg-gradient-to-tr from-purple-300 to-pink-400 rounded-full opacity-20 blur-2xl animate-pulse delay-75"></div>
           </div>
         </div>
 
         {/* Right side - Content */}
-        <div className="order-1 lg:order-2">
-          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+        <div className="order-1 lg:order-2 text-center lg:text-left">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight">
             Le soutien scolaire le plus{' '}
             <span className="bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
               accessible
             </span>
           </h2>
           
-          <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
             Soria transforme l'apprentissage en une expérience interactive et personnalisée, accessible à tous, partout et à tout moment.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {[
               "Aide aux devoirs en temps réel",
               "Explications adaptées au niveau",
@@ -87,18 +87,18 @@ export default function SolutionSection() {
               "Fiches de révision personnalisées",
               "Suivi de progression continu"
             ].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div key={idx} className="flex items-center gap-3 justify-center lg:justify-start">
+                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">{item}</span>
+                <span className="text-gray-700 font-medium text-sm sm:text-base">{item}</span>
               </div>
             ))}
           </div>
 
-          <button className="mt-10 bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg">
+          <button className="mt-8 sm:mt-10 bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto">
             En Savoir Plus
           </button>
         </div>

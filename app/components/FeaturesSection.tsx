@@ -35,62 +35,62 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="relative py-24 px-6 bg-[#1a0b2e] overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-16 w-20 h-20 border-4 border-pink-200/20 rotate-45 opacity-30"></div>
-      <div className="absolute bottom-32 right-24 w-16 h-16 bg-purple-300/10 rounded-full opacity-40"></div>
-      <div className="absolute top-1/3 right-32 w-12 h-12 border-4 border-orange-200/20 opacity-25"></div>
+    <section id="features" className="relative py-16 md:py-24 px-4 sm:px-6 bg-[#1a0b2e] overflow-hidden">
+      {/* Decorative elements - Hidden on mobile */}
+      <div className="hidden md:block absolute top-20 left-16 w-20 h-20 border-4 border-pink-200/20 rotate-45 opacity-30"></div>
+      <div className="hidden md:block absolute bottom-32 right-24 w-16 h-16 bg-purple-300/10 rounded-full opacity-40"></div>
+      <div className="hidden lg:block absolute top-1/3 right-32 w-12 h-12 border-4 border-orange-200/20 opacity-25"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-black text-white mb-6">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 md:mb-6 px-4">
             Nos Fonctionnalités
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed px-4">
             Soria combine intelligence artificielle et pédagogie pour offrir un accompagnement scolaire personnalisé et accessible à tous.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {features.map((feature, idx) => (
             <div 
               key={idx}
               className="group relative"
             >
               {/* Feature card */}
-              <div className="text-center">
+              <div className="text-center px-4">
                 {/* Illustration placeholder */}
-                <div className="mb-8 relative h-56 flex items-center justify-center">
+                <div className="mb-6 md:mb-8 relative h-44 sm:h-52 md:h-56 flex items-center justify-center">
                   <div className="relative">
                     {/* Phone mockup illustration */}
-                    <div className="w-32 h-56 bg-gradient-to-br from-gray-300 to-gray-200 rounded-[2rem] shadow-2xl relative overflow-hidden">
-                      <div className="absolute inset-2 bg-white rounded-[1.5rem] overflow-hidden">
+                    <div className="w-24 h-44 sm:w-28 sm:h-48 md:w-32 md:h-56 bg-gradient-to-br from-gray-300 to-gray-200 rounded-[1.5rem] sm:rounded-[2rem] shadow-2xl relative overflow-hidden">
+                      <div className="absolute inset-2 bg-white rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden">
                         <div className={`h-full bg-gradient-to-br ${
                           idx === 0 ? 'from-pink-50 to-purple-50' :
                           idx === 1 ? 'from-purple-50 to-pink-50' :
                           'from-blue-50 to-purple-50'
                         } flex items-center justify-center`}>
-                          <span className="text-4xl">{feature.icon}</span>
+                          <span className="text-3xl sm:text-4xl">{feature.icon}</span>
                         </div>
                       </div>
                     </div>
                     {/* Decorative person illustration */}
-                    <div className="absolute -bottom-4 -right-8 w-16 h-20 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-80"></div>
+                    <div className="hidden sm:block absolute -bottom-4 -right-8 w-12 h-16 md:w-16 md:h-20 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-80"></div>
                   </div>
                 </div>
 
-                <h3 className={`text-2xl font-bold mb-4 transition-colors ${
+                <h3 className={`text-xl sm:text-2xl font-bold mb-3 md:mb-4 transition-colors ${
                   activeFeature === idx ? 'text-pink-500' : 'text-white'
                 }`}>
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-400 leading-relaxed mb-6 px-4">
+                <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-4 md:mb-6">
                   {feature.description}
                 </p>
 
                 {/* Number badge */}
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full font-bold text-xl transition-all duration-300 ${
+                <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full font-bold text-lg sm:text-xl transition-all duration-300 ${
                   activeFeature === idx 
                     ? 'bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-lg shadow-pink-500/50' 
                     : 'bg-transparent border-2 border-pink-500 text-pink-500'
