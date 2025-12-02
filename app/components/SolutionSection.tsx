@@ -79,7 +79,7 @@ export default function SolutionSection() {
             Soria transforme l'apprentissage en une expérience interactive et personnalisée, accessible à tous, partout et à tout moment.
           </p>
 
-          <div className="space-y-3 sm:space-y-4">
+          <div className="space-y-3 sm:space-y-4 max-w-md mx-auto lg:mx-0">
             {[
               "Aide aux devoirs en temps réel",
               "Explications adaptées au niveau",
@@ -87,18 +87,18 @@ export default function SolutionSection() {
               "Fiches de révision personnalisées",
               "Suivi de progression continu"
             ].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 justify-center lg:justify-start">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div key={idx} className="flex items-center gap-3 justify-start">
+                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium text-sm sm:text-base">{item}</span>
+                <span className="text-gray-800 font-medium text-sm sm:text-base">{item}</span>
               </div>
             ))}
           </div>
 
-          <button className="mt-8 sm:mt-10 bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto">
+          <button className="mt-8 sm:mt-10 bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto mx-auto lg:mx-0 block">
             En Savoir Plus
           </button>
         </div>
