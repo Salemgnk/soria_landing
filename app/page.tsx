@@ -19,7 +19,7 @@ export default function Home() {
         <SolutionSection />
         <ScreenshotsSection />
         <DownloadSection />
-        <PricingSection />
+        {/* <PricingSection /> */}
         <ContactSection />
       </main>
       <Footer />
